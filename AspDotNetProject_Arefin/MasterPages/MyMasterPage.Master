@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMasterPage.master.cs" Inherits="AspDotNetProject_Arefin.MasterPages.MyMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <title>Documentation | Nalika - Admin Template</title>
+    <meta name="description" content="Thanks for purchasing Huge. If you need any support, please contact with us.">
+    <meta name="author" content="uttaraitpark">
+    <meta name="copyright" content="uttaraitpark">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tree-viewer.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        li:hover{
+            background:blue;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="left-side">
+                <div class="logo">
+                    <h1>Admin Dashboard</h1>
+                </div>
+                <div class="left-content">
+                    <ul role="tablist">
+                        <li role="presentation"><a href="../Management/RoleManagement.aspx" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-home"></i></span>Role Management</a></li>
+                        <li role="presentation"><a href="../Management/RegisteredCustomerInfo.aspx" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-folder"></i></span>Registered Customer</a></li>
+                        <li role="presentation"><a href="../Management/ProductInfo.aspx" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-code"></i></span>Product Information</a></li>
+                        <li role="presentation"><a href="../Management/CategoryAdd.aspx" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-slideshare"></i></span>Category Information</a></li>
+                        <li role="presentation"><a href="../Management/DataBoundAndSource_Control.aspx" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-thumbs-up"></i></span>Data Bound</a></li>
+                        <li role="presentation"><a href="../Default.aspx" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-support"></i></span>Back To Home</a></li>
+                    </ul>
+                </div>
+                <div class="copyright" style="text-align:center">
+                    <p>Copyright &#169; 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="right-side">
+            <div class="right-content">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
